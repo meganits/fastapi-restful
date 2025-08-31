@@ -69,6 +69,5 @@ def test_protected_endpoint_without_token():
     response = client.get("/todos")
     assert response.status_code == 401  # Unauthorized
 
-# Add this at the end of the file
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
